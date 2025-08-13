@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Election Management System</title>
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // iOS detection
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.location.href = "http://13.203.67.229/";
+    }
+    // Android detection
+    else if (/android/i.test(userAgent)) {
+      window.location.href = "http://13.203.67.229/";
+    }
+    // If not iOS or Android (desktop, etc.)
+    else {
+      // You can choose default redirect (e.g., website or Play Store)
+      window.location.href = "http://13.203.67.229/";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to Election Management System Portal...</p>
+</body>
+</html>
